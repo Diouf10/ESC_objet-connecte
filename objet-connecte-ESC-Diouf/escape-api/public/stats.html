@@ -36,7 +36,6 @@
 
 <script>
     async function loadStats() {
-        // ➤ URL complète pour lire l’API Node
         const base = "http://localhost:3005";
 
         const s = await (await fetch(base + "/api/game/stats")).json();

@@ -27,7 +27,7 @@
 <script>
 async function loadGraphs() {
     try {
-        // 🔥 Important : URL complète !
+        
         const b = await (await fetch("http://localhost:3005/api/game/stats/buttons")).json();
 
         new Chart(document.getElementById("btnChart"), {

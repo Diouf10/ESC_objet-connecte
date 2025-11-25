@@ -14,7 +14,11 @@ if (!fs.existsSync(DATA_FILE)) {
     fs.writeFileSync(DATA_FILE, JSON.stringify([]));
 }
 
-// ---- POST : Reçoit l’événement du ESP32 ----
+
+
+/** 
+ * POST : Reçoit l’événement du ESP32
+ */ 
 app.post("/api/game/event", (req, res) => {
     const event = req.body;
 
@@ -23,25 +27,35 @@ app.post("/api/game/event", (req, res) => {
     // Charge fichier existant
     const data = JSON.parse(fs.readFileSync(DATA_FILE));
 
+
     // Ajoute événement + date
     data.push({
         ...event,
         receivedAt: new Date().toISOString()
     });
 
+    
     // Sauvegarde
     fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
 
     res.json({ status: "ok", message: "Event saved" });
 });
 
-// ---- GET : Retourne tous les événements ----
+
+
+/**  
+ * GET : Retourne tous les événements
+ */
 app.get("/api/game/events", (req, res) => {
     const data = JSON.parse(fs.readFileSync(DATA_FILE));
     res.json(data);
 });
 
-// ---- GET : Statistiques globales ----
+
+
+/** 
+ * GET : Statistiques globales
+ */
 app.get("/api/game/stats", (req, res) => {
     const events = JSON.parse(fs.readFileSync(DATA_FILE));
 
@@ -53,7 +67,11 @@ app.get("/api/game/stats", (req, res) => {
     res.json({ total, pir, success, failure });
 });
 
-// ---- GET : Statistiques des boutons ----
+
+
+/**  
+ * GET : Statistiques des boutons
+ */
 app.get("/api/game/stats/buttons", (req, res) => {
     const events = JSON.parse(fs.readFileSync(DATA_FILE));
 
@@ -72,5 +90,5 @@ app.get("/api/game/stats/buttons", (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log("API running at http://localhost:" + PORT);
+    console.log("API run sur http://localhost:" + PORT);
 });
