@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Journal Système – IoT</title>
+    <link rel="stylesheet" href="css/lab.css">
+</head>
+
+<body>
+
+<nav class="lab-menu">
+    <a href="index.html">Accueil</a>
+    <a href="realtime.html">Temps réel</a>
+    <a href="stats.html">Statistiques</a>
+    <a href="graphs.html">Graphiques</a>
+    <a href="system.html">Journal</a>
+</nav>
+
+<h1>Journal Système – Monitoring technique</h1>
+
+<div class="container">
+
+    <h2>Informations générales</h2>
+    <p id="total"></p>
+    <p id="apiStatus"></p>
+
+    <h2>Derniers événements</h2>
+    <p id="lastEvent"></p>
+    <p id="lastSuccess"></p>
+    <p id="lastFailure"></p>
+    <p id="lastButton"></p>
+    <p id="lastPir"></p>
+
+    <h2>⏱ Temps écoulé depuis le dernier succès</h2>
+    <p id="timeSinceSuccess"></p>
+
+</div>
+
+<script>
+
+// Format FR, sans secondes
+function formatDateFR(dateStr) {
+    if (!dateStr) return "—";
+
+    return new Date(dateStr).toLocaleString("fr-FR", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+    });
+}
+
+async function loadSystem() {
+    try {
+        const events = await (await fetch("/api/game/events")).json();
+
+        // Statut API
+        document.getElementById("apiStatus").innerHTML =
+            `<span style="color: #28a745; font-weight: bold;">API opérationnelle</span>`;
+
+        // Total
+        document.getElementById("total").innerText =
+            "Nombre total d'événements : " + events.length;
+
+        if (events.length === 0) return;
+
+        // Dernier événement
+        const last = events[events.length - 1];
+        document.getElementById("lastEvent").innerText =
+            "Dernier événement : " + last.event + " (" + formatDateFR(last.receivedAt) + ")";
+
+        // Dernier succès
+        const lastSuccess = [...events].reverse().find(e => e.event === "success");
+        document.getElementById("lastSuccess").innerText =
+            "Dernier succès : " + (lastSuccess ? formatDateFR(lastSuccess.receivedAt) : "Aucun");
+
+        // Dernier échec
+        const lastFailure = [...events].reverse().find(e => e.event === "failure");
+        document.getElementById("lastFailure").innerText =
+            "Dernier échec : " + (lastFailure ? formatDateFR(lastFailure.receivedAt) : "Aucun");
+
+        // Dernier bouton
+        const lastBtn = [...events].reverse().find(e => e.event === "button");
+        document.getElementById("lastButton").innerHTML =
+            "Dernier bouton pressé : " +
+            (lastBtn ? lastBtn.value + " (" + formatDateFR(lastBtn.receivedAt) + ")" : "Aucun");
+
+        // Dernier PIR
+        const lastPir = [...events].reverse().find(e => e.event === "pir");
+        document.getElementById("lastPir").innerText =
+            "Dernière détection PIR : " +
+            (lastPir ? formatDateFR(lastPir.receivedAt) : "Aucune");
+
+        // Temps depuis dernier succès
+        if (lastSuccess) {
+            const t = new Date(lastSuccess.receivedAt);
+            const now = new Date();
+            const diff = Math.floor((now - t) / 1000);
+
+            const min = Math.floor(diff / 60);
+            const sec = diff % 60;
+
+            document.getElementById("timeSinceSuccess").innerText =
+                `${min} minutes et ${sec} secondes`;
+        } else {
+            document.getElementById("timeSinceSuccess").innerText =
+                "Aucun succès enregistré";
+        }
+
+    } catch (err) {
+        document.getElementById("apiStatus").innerHTML =
+            `<span style="color: red; font-weight: bold;">API injoignable</span>`;
+        console.error(err);
+    }
+}
+
+setInterval(loadSystem, 2000);
+loadSystem();
+</script>
+
+</body>
+</html>

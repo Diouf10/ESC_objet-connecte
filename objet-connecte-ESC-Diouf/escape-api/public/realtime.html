@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Événements en Temps Réel – IoT</title>
+    <link rel="stylesheet" href="css/lab.css">
+</head>
+
+<body>
+
+<nav class="lab-menu">
+    <a href="index.html">Accueil</a>
+    <a href="realtime.html" class="active">Temps réel</a>
+    <a href="stats.html">Statistiques</a>
+    <a href="graphs.html">Graphiques</a>
+    <a href="system.html">Journal</a>
+</nav>
+
+<h1>Événements en temps réel</h1>
+
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Événement</th>
+                <th>Détail</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody id="eventTable"></tbody>
+    </table>
+</div>
+
+<script>
+// 🔗 API Node.js
+const API = "http://localhost:3005";
+
+// Format FR
+function formatDateFR(date) {
+    return new Date(date).toLocaleString("fr-FR", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+    });
+}
+
+// Badge coloré
+function getEventBadge(event) {
+    return `<span class="event-pill ${event}">${event}</span>`;
+}
+
+// Valeur colorée
+function getValueLabel(ev) {
+    if (ev.event === "pir") {
+        return `<span class="color-pir">Détecté</span>`;
+    }
+    if (ev.event === "success") {
+        return `<span class="color-success">Succès</span>`;
+    }
+    if (ev.event === "failure") {
+        return `<span class="color-failure">Échec</span>`;
+    }
+    if (ev.event === "button") {
+        switch (ev.value) {
+            case 1: return `<span class="color-rouge">Rouge</span>`;
+            case 2: return `<span class="color-bleu">Bleu</span>`;
+            case 3: return `<span class="color-vert">Vert</span>`;
+            case 4: return `<span class="color-jaune">Jaune</span>`;
+        }
+    }
+    return ev.value;
+}
+
+// Chargement réel
+async function loadRealtime() {
+    try {
+        const events = await (await fetch(API + "/api/game/events")).json();
+        const tbody = document.getElementById("eventTable");
+        tbody.innerHTML = "";
+
+        events.slice().reverse().forEach(ev => {
+            tbody.innerHTML += `
+                <tr>
+                    <td>${getEventBadge(ev.event)}</td>
+                    <td>${getValueLabel(ev)}</td>
+                    <td>${formatDateFR(ev.receivedAt)}</td>
+                </tr>
+            `;
+        });
+    } catch (err) {
+        console.error("Erreur chargement événements :", err);
+    }
+}
+
+// Mise à jour auto toutes les 2s
+setInterval(loadRealtime, 2000);
+loadRealtime();
+</script>
+
+</body>
+</html>

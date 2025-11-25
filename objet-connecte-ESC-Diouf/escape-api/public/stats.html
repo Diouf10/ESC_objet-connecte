@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Statistiques – IoT</title>
+    <link rel="stylesheet" href="css/lab.css">
+</head>
+
+<nav class="lab-menu">
+    <a href="index.html">Accueil</a>
+    <a href="realtime.html">Temps réel</a>
+    <a href="stats.html">Statistiques</a>
+    <a href="graphs.html">Graphiques</a>
+    <a href="system.html">Journal</a>
+</nav>
+
+<body>
+
+<h1>Statistiques globales</h1>
+
+<div class="container">
+    <h2>Vue générale</h2>
+    <p id="total"></p>
+    <p id="pir"></p>
+    <p id="success"></p>
+    <p id="failure"></p>
+</div>
+
+<div class="container">
+    <h2>Boutons pressés</h2>
+    <p id="btn-rouge"></p>
+    <p id="btn-bleu"></p>
+    <p id="btn-vert"></p>
+    <p id="btn-jaune"></p>
+</div>
+
+<script>
+    async function loadStats() {
+        // ➤ URL complète pour lire l’API Node
+        const base = "http://localhost:3005";
+
+        const s = await (await fetch(base + "/api/game/stats")).json();
+        const b = await (await fetch(base + "/api/game/stats/buttons")).json();
+
+        document.getElementById("total").innerText = "Total d'événements : " + s.total;
+        document.getElementById("pir").innerText = "Détections PIR : " + s.pir;
+        document.getElementById("success").innerText = "Succès : " + s.success;
+        document.getElementById("failure").innerText = "Échecs : " + s.failure;
+
+        document.getElementById("btn-rouge").innerText = "Rouge : " + b.rouge;
+        document.getElementById("btn-bleu").innerText = "Bleu : " + b.bleu;
+        document.getElementById("btn-vert").innerText = "Vert : " + b.vert;
+        document.getElementById("btn-jaune").innerText = "Jaune : " + b.jaune;
+    }
+
+    loadStats();
+</script>
+
+</body>
+</html>

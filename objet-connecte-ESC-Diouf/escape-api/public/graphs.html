@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Graphiques – IoT</title>
+    <link rel="stylesheet" href="css/lab.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<nav class="lab-menu">
+    <a href="index.html">Accueil</a>
+    <a href="realtime.html">Temps réel</a>
+    <a href="stats.html">Statistiques</a>
+    <a href="graphs.html">Graphiques</a>
+    <a href="system.html">Journal</a>
+</nav>
+
+<body>
+
+<h1>Graphiques d'analyse</h1>
+
+<div class="container">
+    <h2>Pressions par bouton</h2>
+    <canvas id="btnChart"></canvas>
+</div>
+
+<script>
+async function loadGraphs() {
+    try {
+        // 🔥 Important : URL complète !
+        const b = await (await fetch("http://localhost:3005/api/game/stats/buttons")).json();
+
+        new Chart(document.getElementById("btnChart"), {
+            type: "bar",
+            data: {
+                labels: ["Rouge", "Bleu", "Vert", "Jaune"],
+                datasets: [{
+                    data: [b.rouge, b.bleu, b.vert, b.jaune],
+                    backgroundColor: ["#ff4e4e", "#46a3ff", "#32e673", "#ffe66e"],
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { stepSize: 1 }
+                    }
+                }
+            }
+        });
+
+    } catch (err) {
+        console.error("Erreur lors du chargement des données graphiques :", err);
+    }
+}
+
+loadGraphs();
+</script>
+
+</body>
+</html>

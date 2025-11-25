@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/CMakeFiles/bootloader
+/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/CMakeFiles/bootloader.rule
+/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/CMakeFiles/bootloader-complete.rule
+/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
