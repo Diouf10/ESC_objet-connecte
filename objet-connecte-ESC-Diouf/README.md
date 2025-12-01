@@ -25,13 +25,13 @@ S’ils réussissent, le dispositif s’illumine, une mélodie résonne, et le c
    
 Élément	Type	Rôle
 
-ESP32 DevKitC	    Microcontrôleur	Unité principale de traitement
-PIR (GPIO 23)	    Capteur de présence	Active le système quand un joueur approche
-Boutons (12 – 15)	Capteurs d’entrée	Permettent de saisir la combinaison
+ESP32 DevKitC	      Microcontrôleur	Unité principale de traitement
+PIR (GPIO 23)	      Capteur de présence	Active le système quand un joueur approche
+Boutons (12 – 15)	  Capteurs d’entrée	Permettent de saisir la combinaison
 LED verte (GPIO 2)	Actionneur visuel	Indique la réussite
 LED rouge (GPIO 4)	Actionneur visuel	Indique l’échec
-Buzzer (GPIO 5)	Actionneur sonore	Produit les bips et la mélodie
-Résistances, fils, breadboard	—	Connexions et protection des composants
+Buzzer (GPIO 5)	    Actionneur sonore	Produit les bips et la mélodie
+Résistances, fils,  breadboard	—	Connexions et protection des composants
 
 
 ### 4. Fonctionnement
@@ -50,24 +50,22 @@ Le système s’active ; la LED verte clignote brièvement et un bip indique que
 - Réinitialisation : après un temps donné, le système revient à l’état initial et attend une nouvelle détection PIR.
 
 
-5. Schéma électronique
+### 5. Schéma électronique
 
 ESP32 relié à :
 
-- Capteur PIR sur GPIO 23
+  - Capteur PIR sur GPIO 23
 
-- Boutons poussoirs sur GPIO 12, 13, 14 et 15
+  - Boutons poussoirs sur GPIO 12, 13, 14 et 15
 
-- LED verte sur GPIO 2
+  - LED verte sur GPIO 2
 
-- LED rouge sur GPIO 4
+  - LED rouge sur GPIO 4
 
-- Buzzer (PWM LEDC) sur GPIO 5
+  - Buzzer (PWM LEDC) sur GPIO 5
 
 - Chaque bouton (integrés pour les boutons) et LED possède une résistance de protection.
 Un schéma complet accompagne le rapport pour illustrer les connexions.
-
-
 
 ### 6. Code et structure
 
@@ -89,8 +87,6 @@ Le projet est divisé en modules :
   ├── events.json               (stockage d’événements)
   ├── .env                      (configuration locale)
   └── public/                   (page web temps réel)
-
-
 
 
 ### 7. Communication IoT
@@ -116,8 +112,18 @@ L'objectif est d'obtenir :
   - Un historique des actions dans le fichier events.json
 
 
-
 ### 8. Processus de compilation Build, flash & test du prototype
+
+- Configuration Wi-Fi obligatoire avant le buid
+
+  Avant d’effectuer idf.py build, vous devez configurer le SSID et le mot de passe Wi-Fi dans l’interface Kconfig.
+
+  - Ouvrir le menu de configuration :
+    componnets/wifi/Kconfig.projbuild
+
+  - Remplacer vos paramètres de connexion :
+    - "WiFi SSID"
+    - "password"
 
 - Compilation :
     ```bash
@@ -133,12 +139,12 @@ L'objectif est d'obtenir :
 - Déploiement de l’API :
     ```bash
     cd escape-api
+    créer un fichier .env
+    copier le contenu de .env-example dnas .env
+    Dans le fichier .env changer le ip par celui de votre reseaux
     npm install
     npm start
     ```
-
-
-
 
 ### 9. Auteur
 

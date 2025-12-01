@@ -6,6 +6,7 @@ static const char *TAG = "PIR";
 
 static gpio_num_t s_pir_gpio = -1;
 
+// Initialise le capteur PIR
 void pir_init(gpio_num_t pin) {
     s_pir_gpio = pin;
     gpio_reset_pin(s_pir_gpio);
@@ -14,6 +15,7 @@ void pir_init(gpio_num_t pin) {
     ESP_LOGI(TAG, "Capteur PIR initialisé sur la broche GPIO %d", s_pir_gpio);
 }
 
+// Retourne 1 si présence détectée, sinon 0
 int pir_detected(void) {
     int state = gpio_get_level(s_pir_gpio);
 

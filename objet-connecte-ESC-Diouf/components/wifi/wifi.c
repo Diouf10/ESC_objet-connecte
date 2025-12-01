@@ -2,7 +2,7 @@
 #include "esp_log.h"
 #include "nvs_flash.h"
 
-// SSID et mot de passe lus depuis menuconfig (plus sécuritaire) (on évitee d'hardcoder le wifi ssid  et le mdp dans le code.)
+// SSID et mot de passe lus depuis menuconfig (plus sécuritaire) (on évite d'hardcoder le wifi ssid et le mdp dans le code.)
 #define WIFI_SSID CONFIG_PROJECT_WIFI_SSID
 #define WIFI_PASS CONFIG_PROJECT_WIFI_PASS
 

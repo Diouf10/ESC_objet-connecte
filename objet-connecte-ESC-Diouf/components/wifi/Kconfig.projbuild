@@ -1,11 +1,17 @@
-menu "Project WiFi Settings"
+menu "Configuration du Wi-Fi (Projet Coffre C-200)"
 
 config PROJECT_WIFI_SSID
-    string "WiFi SSID"
-    default "MyWifi"
+    string "Nom du réseau Wi-Fi (SSID)"
+    default "MonWiFi"
+    help
+        SSID du réseau auquel l'ESP32 doit se connecter.
+        Ce champ doit être modifié dans : idf.py menuconfig
 
 config PROJECT_WIFI_PASS
-    string "WiFi Password"
-    default "password"
+    string "Mot de passe Wi-Fi"
+    default "password1234"
+    help
+        Mot de passe du réseau Wi-Fi.
+        IMPORTANT : À changer dans menuconfig avant de flasher l’ESP32.
 
 endmenu

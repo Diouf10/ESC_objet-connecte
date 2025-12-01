@@ -22,6 +22,7 @@ int codeSecret[SEQ_LEN] = {1, 3, 2, 4};
 int tentative[SEQ_LEN];
 int index_seq = 0;
 
+// Envoie les événements vers l’API lorsque le WiFi est disponible
 void iot_task(void *pvParameters)
 {
     char json[64];
@@ -63,11 +64,13 @@ void iot_task(void *pvParameters)
 void app_main(void) {
     ESP_LOGI(TAG, "Initialisation du système...");
 
-    wifi_init_sta();
+    wifi_init_sta(); // Démarrage du WiFi (station)
+
 
     event_queue = xQueueCreate(10, sizeof(char) * 64);
     xTaskCreate(iot_task, "iot_task", 4096, NULL, 5, NULL);
 
+    // Initialisation des périphériques
     gpio_num_t btns[4] = {12, 13, 14, 15};
     buttons_init(btns, 4);
 
@@ -90,20 +93,25 @@ void app_main(void) {
     TickType_t pir_disabled_start = 0;
 
     while (1) {
+
+        // Réactivation automatique du PIR après délai
         if (pir_disabled && (xTaskGetTickCount() - pir_disabled_start) >= pdMS_TO_TICKS(300000)) {
             pir_disabled = false;
             ESP_LOGI(TAG, "Le capteur PIR est réactivé.");
         }
 
+         // Détection PIR
         int pirState = 0;
         if (!pir_disabled) {
             int pirNow = pir_detected();
             vTaskDelay(pdMS_TO_TICKS(200));
             int pirConfirm = pir_detected();
 
+             // Première détection -> activation du système
             if (pirNow == 1 && pirConfirm == 1 && lastPirState == 0) {
                 ESP_LOGI(TAG, "PIR détecte un joueur devant le système !");
 
+                // Envoyer données
                 char json[64];
                 snprintf(json, sizeof(json), "{\"event\":\"pir\",\"value\":1}");
                 xQueueSend(event_queue, json, 0);
@@ -124,11 +132,13 @@ void app_main(void) {
             lastPirState = pirNow;
         }
 
+        // Lecture de la séquence du joueur
         if (active_play) {
             int b = read_button();
             if (b != -1) {
                 ESP_LOGI(TAG, "Bouton %d pressé", b);
 
+                // Envoyer données
                 char json[64];
                 snprintf(json, sizeof(json), "{\"event\":\"button\",\"value\":%d}", b);
                 xQueueSend(event_queue, json, 0);
@@ -138,6 +148,7 @@ void app_main(void) {
 
                 buzzer_beep_short();
 
+                // Vérification de la séquence complète
                 if (index_seq == SEQ_LEN) {
                     ESP_LOGI(TAG, "Séquence complète entrée, vérification...");
                     int correct = 1;
@@ -155,6 +166,7 @@ void app_main(void) {
                     if (correct) {
                         ESP_LOGI(TAG, "Succès ! Séquence correcte.");
 
+                        // Envoyer données
                         char json[64];
                         snprintf(json, sizeof(json), "{\"event\":\"success\",\"value\":1}");
                         xQueueSend(event_queue, json, 0);
@@ -166,6 +178,7 @@ void app_main(void) {
                     } else {
                         ESP_LOGE(TAG, "Échec ! Séquence incorrecte.");
 
+                        // Envoyer données
                         char json[64];
                         snprintf(json, sizeof(json), "{\"event\":\"failure\",\"value\":1}");
                         xQueueSend(event_queue, json, 0);
@@ -176,7 +189,7 @@ void app_main(void) {
                         gpio_set_level(LED_ROUGE, 0);
                     }
 
-                    index_seq = 0;
+                    index_seq = 0;  // Réinitialisation
                     ESP_LOGI(TAG, "Réinitialisation de la séquence, prêt pour un nouvel essai.");
                 }
             }

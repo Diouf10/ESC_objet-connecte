@@ -29,6 +29,7 @@ static note_t melody[] = {
 
 //////////////////////
 
+// Initialise le buzzer
 void buzzer_init(gpio_num_t pin) {
     s_buzzer_gpio = pin;
 
@@ -53,6 +54,7 @@ void buzzer_init(gpio_num_t pin) {
     ledc_channel_config(&channel_conf);
 }
 
+// Joue un court bip de 200 ms
 void buzzer_beep_short(void) {
     ledc_set_freq(LEDC_LOW_SPEED_MODE, LEDC_TIMER_0, 1000);
     ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, 512);
@@ -61,6 +63,7 @@ void buzzer_beep_short(void) {
     ledc_stop(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, 0);
 }
 
+// Joue un bip long de 1 seconde
 void buzzer_beep_long(void) {
     ledc_set_freq(LEDC_LOW_SPEED_MODE, LEDC_TIMER_0, 1000);
     ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, 512);
@@ -69,6 +72,7 @@ void buzzer_beep_long(void) {
     ledc_stop(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, 0);
 }
 
+// Joue la mélodie complète de victoire
 void buzzer_play_victory(void) {
     ESP_LOGI(TAG, "Lecture de la mélodie de victoire");
     int num_notes = sizeof(melody) / sizeof(melody[0]);

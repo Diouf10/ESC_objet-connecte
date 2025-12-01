@@ -7,6 +7,7 @@ static const char *TAG = "BUTTONS";
 static gpio_num_t s_button_pins[4];
 static int s_button_count = 0;
 
+// Initialise les boutons 
 void buttons_init(gpio_num_t *pins, int count) {
     s_button_count = count;
     for (int i = 0; i < count; i++) {
