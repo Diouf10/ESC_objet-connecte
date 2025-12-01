@@ -1,13 +1,13 @@
 {
     "version":            "1.2",
     "project_name":       "objet-connecte-ESC-Diouf",
-    "project_version":    "1",
-    "project_path":       "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf",
+    "project_version":    "7180d76-dirty",
+    "project_path":       "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf",
     "idf_path":           "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf",
-    "build_dir":          "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build",
-    "config_file":        "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/sdkconfig",
+    "build_dir":          "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build",
+    "config_file":        "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/sdkconfig",
     "config_defaults":    "",
-    "bootloader_elf":     "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader/bootloader.elf",
+    "bootloader_elf":     "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/bootloader/bootloader.elf",
     "app_elf":            "objet-connecte-ESC-Diouf.elf",
     "app_bin":            "objet-connecte-ESC-Diouf.bin",
     "build_type":         "flash_app",
@@ -26,7 +26,7 @@
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "xtensa" ],
     "build_components" : [ "app_update", "bootloader", "bootloader_support", "buzzer", "cxx", "driver", "efuse", "esp-tls", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_event", "esp_http_client", "esp_hw_support", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esp_vfs_console", "esp_wifi", "esptool_py", "freertos", "hal", "heap", "http_parser", "led", "log", "lwip", "main", "mbedtls", "newlib", "nvs_flash", "partition_table", "pir_sensor", "pthread", "push_button", "sdmmc", "soc", "spi_flash", "tcp_transport", "vfs", "wifi", "wpa_supplicant", "xtensa", "" ],
-    "build_component_paths" : [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/app_update", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support", "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/buzzer", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/cxx", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/efuse", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp-tls", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_app_format", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_bootloader_format", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_coex", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_common", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_ana_cmpr", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_dac", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_gpio", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_gptimer", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_i2c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_i2s", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_ledc", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_parlio", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_pcnt", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_rmt", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_sdio", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_sdm", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_sdmmc", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_sdspi", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_spi", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_tsens", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_twai", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_uart", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_event", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_http_client", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_mm", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_netif", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_netif_stack", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_partition", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_phy", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_pm", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_ringbuf", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_rom", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_security", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_timer", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_vfs_console", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_wifi", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esptool_py", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/heap", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/http_parser", "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/led", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/log", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip", "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/main", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/mbedtls", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/partition_table", "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/pir_sensor", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/pthread", "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/push_button", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/sdmmc", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/tcp_transport", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/vfs", "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/wifi", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/xtensa", "" ],
+    "build_component_paths" : [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/app_update", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support", "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/buzzer", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/cxx", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/efuse", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp-tls", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_app_format", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_bootloader_format", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_coex", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_common", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_ana_cmpr", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_dac", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_gpio", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_gptimer", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_i2c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_i2s", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_ledc", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_parlio", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_pcnt", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_rmt", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_sdio", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_sdm", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_sdmmc", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_sdspi", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_spi", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_tsens", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_twai", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_uart", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_event", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_http_client", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_mm", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_netif", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_netif_stack", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_partition", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_phy", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_pm", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_ringbuf", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_rom", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_security", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_timer", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_vfs_console", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_wifi", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esptool_py", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/heap", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/http_parser", "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/led", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/log", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip", "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/main", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/mbedtls", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/partition_table", "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/pir_sensor", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/pthread", "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/push_button", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/sdmmc", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/tcp_transport", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/vfs", "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/wifi", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "app_update": {
             "alias": "idf::app_update",
@@ -39,7 +39,7 @@
             "priv_reqs": [ "esptool_py", "efuse", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/app_update/libapp_update.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/app_update/libapp_update.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/app_update/esp_ota_ops.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/app_update/esp_ota_app_desc.c" ],
             "include_dirs": [ "include" ]
         },
@@ -69,7 +69,7 @@
             "priv_reqs": [ "spi_flash", "mbedtls", "efuse", "heap", "esp_bootloader_format", "esp_app_format" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/bootloader_support/libbootloader_support.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/bootloader_support/libbootloader_support.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_common_loader.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_clock_init.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_mem.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_random.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_efuse.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/src/flash_encrypt.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/src/secure_boot.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_random_esp32.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_utility.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/src/flash_partitions.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/src/esp_image_format.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/src/bootloader_sha.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader_support/src/esp32/secure_boot_secure_features.c" ],
             "include_dirs": [ "include", "bootloader_flash/include" ]
         },
@@ -77,15 +77,15 @@
             "alias": "idf::buzzer",
             "target": "___idf_buzzer",
             "prefix": "idf",
-            "dir": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/buzzer",
+            "dir": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/buzzer",
             "type": "LIBRARY",
             "lib": "__idf_buzzer",
             "reqs": [ "driver", "freertos" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/buzzer/libbuzzer.a",
-            "sources": [ "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/buzzer/buzzer.c" ],
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/buzzer/libbuzzer.a",
+            "sources": [ "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/buzzer/buzzer.c" ],
             "include_dirs": [ "include" ]
         },
         "cxx": {
@@ -99,7 +99,7 @@
             "priv_reqs": [ "esp_system", "pthread" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/cxx/libcxx.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/cxx/libcxx.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/cxx/cxx_exception_stubs.cpp", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/cxx/cxx_guards.cpp", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/cxx/cxx_init.cpp" ],
             "include_dirs": []
         },
@@ -114,7 +114,7 @@
             "priv_reqs": [ "efuse", "esp_timer", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/driver/libdriver.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/driver/libdriver.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver/deprecated/adc_legacy.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver/deprecated/adc_dma_legacy.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver/deprecated/dac_common_legacy.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver/deprecated/esp32/dac_legacy.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver/deprecated/timer_legacy.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver/i2c/i2c.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver/deprecated/i2s_legacy.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver/deprecated/mcpwm_legacy.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver/deprecated/pcnt_legacy.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver/deprecated/rmt_legacy.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver/deprecated/sigma_delta_legacy.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver/touch_sensor/touch_sensor_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver/twai/twai.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/driver/deprecated/adc_i2s_deprecated.c" ],
             "include_dirs": [ "deprecated", "i2c/include", "touch_sensor/include", "twai/include", "touch_sensor/esp32/include" ]
         },
@@ -129,7 +129,7 @@
             "priv_reqs": [ "bootloader_support", "soc", "spi_flash", "esp_system", "esp_partition", "esp_app_format" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/efuse/libefuse.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/efuse/libefuse.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/efuse/esp32/esp_efuse_table.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/efuse/esp32/esp_efuse_fields.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/efuse/esp32/esp_efuse_utility.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/efuse/src/esp_efuse_api.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/efuse/src/esp_efuse_fields.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/efuse/src/esp_efuse_utility.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/efuse/src/esp_efuse_startup.c" ],
             "include_dirs": [ "include", "esp32/include" ]
         },
@@ -144,7 +144,7 @@
             "priv_reqs": [ "http_parser", "esp_timer", "lwip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp-tls/libesp-tls.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp-tls/libesp-tls.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp-tls/esp_tls.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp-tls/esp-tls-crypto/esp_tls_crypto.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp-tls/esp_tls_error_capture.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp-tls/esp_tls_platform_port.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp-tls/esp_tls_mbedtls.c" ],
             "include_dirs": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp-tls", "esp-tls-crypto" ]
         },
@@ -159,7 +159,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_app_format/libesp_app_format.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_app_format/libesp_app_format.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_app_format/esp_app_desc.c" ],
             "include_dirs": [ "include" ]
         },
@@ -174,7 +174,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_bootloader_format/libesp_bootloader_format.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_bootloader_format/libesp_bootloader_format.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c" ],
             "include_dirs": [ "include" ]
         },
@@ -189,7 +189,7 @@
             "priv_reqs": [ "esp_timer", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_coex/libesp_coex.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_coex/libesp_coex.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_coex/esp32/esp_coex_adapter.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_coex/src/coexist_debug_diagram.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_coex/src/coexist_debug.c" ],
             "include_dirs": [ "include" ]
         },
@@ -204,7 +204,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_common/libesp_common.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_common/libesp_common.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_common/src/esp_err_to_name.c" ],
             "include_dirs": [ "include" ]
         },
@@ -249,7 +249,7 @@
             "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_driver_i2s" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_dac/libesp_driver_dac.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_dac/libesp_driver_dac.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_dac/dac_oneshot.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_dac/dac_cosine.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_dac/dac_continuous.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_dac/dac_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_dac/esp32/dac_dma.c" ],
             "include_dirs": [ "./include" ]
         },
@@ -264,7 +264,7 @@
             "priv_reqs": [ "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_gpio/libesp_driver_gpio.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_gpio/libesp_driver_gpio.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_gpio/src/gpio.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_gpio/src/gpio_glitch_filter_ops.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_gpio/src/rtc_io.c" ],
             "include_dirs": [ "include" ]
         },
@@ -279,7 +279,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_gptimer/libesp_driver_gptimer.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_gptimer/libesp_driver_gptimer.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_gptimer/src/gptimer.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_gptimer/src/gptimer_common.c" ],
             "include_dirs": [ "include" ]
         },
@@ -294,7 +294,7 @@
             "priv_reqs": [ "esp_driver_gpio", "esp_pm", "esp_ringbuf" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_i2c/libesp_driver_i2c.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_i2c/libesp_driver_i2c.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_i2c/i2c_master.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_i2c/i2c_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_i2c/i2c_slave.c" ],
             "include_dirs": [ "include" ]
         },
@@ -309,7 +309,7 @@
             "priv_reqs": [ "esp_driver_gpio", "esp_pm", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_i2s/libesp_driver_i2s.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_i2s/libesp_driver_i2s.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_i2s/i2s_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_i2s/i2s_std.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_i2s/i2s_pdm.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_i2s/i2s_platform.c" ],
             "include_dirs": [ "include" ]
         },
@@ -324,7 +324,7 @@
             "priv_reqs": [ "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_ledc/libesp_driver_ledc.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_ledc/libesp_driver_ledc.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_ledc/src/ledc.c" ],
             "include_dirs": [ "include" ]
         },
@@ -339,7 +339,7 @@
             "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm/src/mcpwm_cap.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm/src/mcpwm_cmpr.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm/src/mcpwm_com.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm/src/mcpwm_fault.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm/src/mcpwm_gen.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm/src/mcpwm_oper.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm/src/mcpwm_sync.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm/src/mcpwm_timer.c" ],
             "include_dirs": [ "include" ]
         },
@@ -369,7 +369,7 @@
             "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_pcnt/src/pulse_cnt.c" ],
             "include_dirs": [ "include" ]
         },
@@ -384,7 +384,7 @@
             "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_driver_bitscrambler", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_rmt/src/rmt_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_rmt/src/rmt_encoder.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_rmt/src/rmt_encoder_bytes.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_rmt/src/rmt_encoder_copy.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_rmt/src/rmt_encoder_simple.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_rmt/src/rmt_rx.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_rmt/src/rmt_tx.c" ],
             "include_dirs": [ "include" ]
         },
@@ -399,7 +399,7 @@
             "priv_reqs": [ "esp_driver_gpio", "esp_ringbuf" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_sdio/libesp_driver_sdio.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_sdio/libesp_driver_sdio.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_sdio/src/sdio_slave.c" ],
             "include_dirs": [ "include" ]
         },
@@ -414,7 +414,7 @@
             "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_sdm/libesp_driver_sdm.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_sdm/libesp_driver_sdm.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_sdm/src/sdm.c" ],
             "include_dirs": [ "include" ]
         },
@@ -429,7 +429,7 @@
             "priv_reqs": [ "esp_timer", "esp_pm", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_sdmmc/libesp_driver_sdmmc.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_sdmmc/libesp_driver_sdmmc.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_sdmmc/src/sdmmc_transaction.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c" ],
             "include_dirs": [ "include" ]
         },
@@ -444,7 +444,7 @@
             "priv_reqs": [ "esp_timer", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_sdspi/libesp_driver_sdspi.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_sdspi/libesp_driver_sdspi.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_sdspi/src/sdspi_crc.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_sdspi/src/sdspi_host.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_sdspi/src/sdspi_transaction.c" ],
             "include_dirs": [ "include" ]
         },
@@ -459,7 +459,7 @@
             "priv_reqs": [ "esp_timer", "esp_mm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_spi/libesp_driver_spi.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_spi/libesp_driver_spi.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_spi/src/gpspi/spi_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_spi/src/gpspi/spi_slave.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_spi/src/gpspi/spi_dma.c" ],
             "include_dirs": [ "include" ]
         },
@@ -489,7 +489,7 @@
             "priv_reqs": [ "esp_driver_gpio", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_twai/libesp_driver_twai.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_twai/libesp_driver_twai.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_twai/esp_twai.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_twai/esp_twai_onchip.c" ],
             "include_dirs": [ "include" ]
         },
@@ -504,7 +504,7 @@
             "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_ringbuf", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_uart/libesp_driver_uart.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_driver_uart/libesp_driver_uart.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart_wakeup.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_driver_uart/src/uart_vfs.c" ],
             "include_dirs": [ "include" ]
         },
@@ -534,7 +534,7 @@
             "priv_reqs": [ "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_event/libesp_event.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_event/libesp_event.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_event/default_event_loop.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_event/esp_event.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_event/esp_event_private.c" ],
             "include_dirs": [ "include" ]
         },
@@ -549,7 +549,7 @@
             "priv_reqs": [ "tcp_transport", "http_parser" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_http_client/libesp_http_client.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_http_client/libesp_http_client.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_http_client/esp_http_client.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_http_client/lib/http_auth.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_http_client/lib/http_header.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_http_client/lib/http_utils.c" ],
             "include_dirs": [ "include" ]
         },
@@ -564,7 +564,7 @@
             "priv_reqs": [ "efuse", "spi_flash", "bootloader_support", "esp_security", "esp_driver_gpio", "esp_timer", "esp_pm", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_hw_support/libesp_hw_support.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_hw_support/libesp_hw_support.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/cpu.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32/esp_cpu_intr.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/esp_memory_utils.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32/cpu_region_protect.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/esp_clk.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/clk_ctrl_os.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/hw_random.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/intr_alloc.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/mac_addr.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/periph_ctrl.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/revision.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/rtc_module.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/regi2c_ctrl.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/esp_gpio_reserve.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/sar_periph_ctrl_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32/io_mux.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32/esp_clk_tree.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/dma/esp_dma_utils.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/dma/gdma_link.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/spi_bus_lock.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/clk_utils.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp_clk_tree_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/spi_share_hw_ctrl.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/adc_share_hw_ctrl.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/sleep_modem.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/sleep_modes.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/sleep_console.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/sleep_usb.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/sleep_gpio.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/sleep_event.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/rtc_wdt.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/mspi_timing_tuning/mspi_timing_tuning.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/sleep_wake_stub.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/esp_clock_output.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/power_supply/brownout.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32/rtc_clk.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32/rtc_clk_init.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32/rtc_init.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32/rtc_sleep.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32/rtc_time.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32/chip_info.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32/cache_sram_mmu.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/port/esp32/sar_periph_ctrl.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_hw_support/lowpower" ],
             "include_dirs": [ "include", "include/soc", "include/soc/esp32", "dma/include", "ldo/include", "debug_probe/include", "mspi_timing_tuning/include", "mspi_timing_tuning/tuning_scheme_impl/include", "power_supply/include" ]
         },
@@ -579,7 +579,7 @@
             "priv_reqs": [ "heap", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_mm/libesp_mm.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_mm/libesp_mm.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_mm/esp_mmu_map.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_mm/port/esp32/ext_mem_layout.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_mm/esp_cache_msync.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_mm/esp_cache_utils.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_mm/cache_esp32.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_mm/heap_align_hw.c" ],
             "include_dirs": [ "include" ]
         },
@@ -594,7 +594,7 @@
             "priv_reqs": [ "esp_netif_stack" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_netif/libesp_netif.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_netif/libesp_netif.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_netif/esp_netif_handlers.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_netif/esp_netif_objects.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_netif/esp_netif_defaults.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_netif/lwip/esp_netif_sntp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_netif/lwip/esp_netif_lwip_defaults.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_netif/lwip/netif/wlanif.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_netif/lwip/netif/ethernetif.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_netif/lwip/netif/esp_pbuf_ref.c" ],
             "include_dirs": [ "include" ]
         },
@@ -624,7 +624,7 @@
             "priv_reqs": [ "esp_system", "spi_flash", "partition_table", "bootloader_support", "app_update" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_partition/libesp_partition.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_partition/libesp_partition.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_partition/partition.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_partition/partition_target.c" ],
             "include_dirs": [ "include" ]
         },
@@ -639,7 +639,7 @@
             "priv_reqs": [ "nvs_flash", "esp_driver_gpio", "efuse", "esp_timer", "esp_wifi" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_phy/libesp_phy.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_phy/libesp_phy.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_phy/src/phy_override.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_phy/src/lib_printf.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_phy/src/phy_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_phy/src/phy_init.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_phy/esp32/phy_init_data.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_phy/src/btbb_init.c" ],
             "include_dirs": [ "include", "esp32/include" ]
         },
@@ -654,7 +654,7 @@
             "priv_reqs": [ "esp_system", "esp_driver_gpio", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_pm/libesp_pm.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_pm/libesp_pm.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_pm/pm_locks.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_pm/pm_trace.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_pm/pm_impl.c" ],
             "include_dirs": [ "include" ]
         },
@@ -669,7 +669,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_ringbuf/libesp_ringbuf.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_ringbuf/libesp_ringbuf.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_ringbuf/ringbuf.c" ],
             "include_dirs": [ "include" ]
         },
@@ -684,7 +684,7 @@
             "priv_reqs": [ "soc", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_rom/libesp_rom.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_rom/libesp_rom.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_rom/patches/esp_rom_sys.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_rom/patches/esp_rom_print.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_rom/patches/esp_rom_crc.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_rom/patches/esp_rom_uart.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_rom/patches/esp_rom_spiflash.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_rom/patches/esp_rom_efuse.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_rom/patches/esp_rom_gpio.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_rom/patches/esp_rom_longjmp.S" ],
             "include_dirs": [ "include", "esp32/include", "esp32/include/esp32", "esp32" ]
         },
@@ -699,7 +699,7 @@
             "priv_reqs": [ "efuse", "esp_hw_support", "esp_system", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_security/libesp_security.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_security/libesp_security.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_security/src/init.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_security/src/esp_crypto_lock.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_security/src/esp_crypto_periph_clk.c" ],
             "include_dirs": [ "include" ]
         },
@@ -714,7 +714,7 @@
             "priv_reqs": [ "spi_flash", "esp_timer", "esp_mm", "bootloader_support", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_system/libesp_system.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_system/libesp_system.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/esp_err.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/crosscore_int.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/esp_ipc.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/esp_system_console.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/freertos_hooks.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/int_wdt.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/panic.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/esp_system.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/startup.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/startup_funcs.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/system_time.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/stack_check.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/ubsan.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/xt_wdt.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/task_wdt/task_wdt.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/task_wdt/task_wdt_impl_timergroup.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/cpu_start.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/panic_handler.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/esp_system_chip.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/image_process.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/esp_ipc_isr.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_port.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_handler.S", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_routines.S", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/arch/xtensa/panic_arch.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/arch/xtensa/panic_handler_asm.S", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack_asm.S", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers_asm.S", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/arch/xtensa/debug_stubs.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/arch/xtensa/trax.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/soc/esp32/highint_hdl.S", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/soc/esp32/clk.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/soc/esp32/reset_reason.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/soc/esp32/system_internal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_system/port/soc/esp32/cache_err_int.c" ],
             "include_dirs": [ "include" ]
         },
@@ -729,7 +729,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_timer/libesp_timer.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_timer/libesp_timer.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_timer/src/esp_timer.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_timer/src/esp_timer_init.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_timer/src/ets_timer_legacy.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_timer/src/system_time.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_timer/src/esp_timer_impl_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_timer/src/esp_timer_impl_lac.c" ],
             "include_dirs": [ "include" ]
         },
@@ -744,7 +744,7 @@
             "priv_reqs": [ "vfs", "esp_driver_uart", "esp_driver_usb_serial_jtag" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_vfs_console/libesp_vfs_console.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_vfs_console/libesp_vfs_console.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_vfs_console/vfs_console.c" ],
             "include_dirs": [ "include" ]
         },
@@ -759,7 +759,7 @@
             "priv_reqs": [ "esptool_py", "esp_pm", "esp_timer", "nvs_flash", "wpa_supplicant", "hal", "lwip", "esp_coex" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/esp_wifi/libesp_wifi.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/esp_wifi/libesp_wifi.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_wifi/src/lib_printf.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_wifi/src/mesh_event.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_wifi/src/smartconfig.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_wifi/src/wifi_init.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_wifi/src/wifi_default.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_wifi/src/wifi_netif.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_wifi/src/wifi_default_ap.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_wifi/esp32/esp_adapter.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_wifi/regulatory/esp_wifi_regulatory.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/esp_wifi/src/smartconfig_ack.c" ],
             "include_dirs": [ "include", "include/local", "wifi_apps/include", "wifi_apps/nan_app/include" ]
         },
@@ -789,7 +789,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/freertos/libfreertos.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/freertos/libfreertos.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/heap_idf.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/app_startup.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/port_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/port_systick.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/list.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/stream_buffer.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_init.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_overlay_os_hook.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/esp_additions/freertos_compatibility.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/esp_additions/idf_additions_event_groups.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/freertos/esp_additions/idf_additions.c" ],
             "include_dirs": [ "config/include", "config/include/freertos", "config/xtensa/include", "FreeRTOS-Kernel/include", "FreeRTOS-Kernel/portable/xtensa/include", "FreeRTOS-Kernel/portable/xtensa/include/freertos", "esp_additions/include" ]
         },
@@ -804,7 +804,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/hal/libhal.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/hal/libhal.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/hal_utils.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/mpu_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/efuse_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/esp32/efuse_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/wdt_hal_iram.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/mmu_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/esp32/cache_hal_esp32.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/color_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/spi_flash_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/spi_flash_hal_iram.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/spi_flash_encrypt_hal_iram.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/esp32/clk_tree_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/uart_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/uart_hal_iram.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/gpio_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/rtc_io_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/timer_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/ledc_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/ledc_hal_iram.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/i2c_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/i2c_hal_iram.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/rmt_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/pcnt_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/mcpwm_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/twai_hal_sja1000.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/i2s_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/sdm_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/sdmmc_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/adc_hal_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/adc_oneshot_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/adc_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/mpi_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/sha_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/aes_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/brownout_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/spi_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/spi_hal_iram.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/spi_slave_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/spi_slave_hal_iram.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/sdio_slave_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/esp32/touch_sensor_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/touch_sensor_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/touch_sens_hal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/hal/esp32/gpio_hal_workaround.c" ],
             "include_dirs": [ "platform_port/include", "esp32/include", "include" ]
         },
@@ -819,7 +819,7 @@
             "priv_reqs": [ "soc" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/heap/libheap.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/heap/libheap.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/heap/heap_caps_base.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/heap/heap_caps.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/heap/heap_caps_init.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/heap/multi_heap.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/heap/tlsf/tlsf.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/heap/port/memory_layout_utils.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/heap/port/esp32/memory_layout.c" ],
             "include_dirs": [ "include", "tlsf" ]
         },
@@ -834,7 +834,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/http_parser/libhttp_parser.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/http_parser/libhttp_parser.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/http_parser/http_parser.c" ],
             "include_dirs": [ "." ]
         },
@@ -842,15 +842,15 @@
             "alias": "idf::led",
             "target": "___idf_led",
             "prefix": "idf",
-            "dir": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/led",
+            "dir": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/led",
             "type": "LIBRARY",
             "lib": "__idf_led",
             "reqs": [ "driver" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/led/libled.a",
-            "sources": [ "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/led/led.c" ],
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/led/libled.a",
+            "sources": [ "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/led/led.c" ],
             "include_dirs": [ "include" ]
         },
         "log": {
@@ -864,7 +864,7 @@
             "priv_reqs": [ "hal", "soc", "esp_hw_support" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/log/liblog.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/log/liblog.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/log/src/os/log_timestamp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/log/src/log_timestamp_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/log/src/os/log_lock.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/log/src/buffer/log_buffers.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/log/src/os/util.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/log/src/util.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/log/src/log_format_text.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/log/src/log_print.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/log/src/log.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/log/src/os/log_write.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/log/src/log_level/log_level.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/log/src/log_level/tag_log_level/tag_log_level.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/log/src/log_level/tag_log_level/linked_list/log_linked_list.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/log/src/log_level/tag_log_level/cache/log_binary_heap.c" ],
             "include_dirs": [ "include" ]
         },
@@ -879,7 +879,7 @@
             "priv_reqs": [ "vfs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/lwip/liblwip.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/lwip/liblwip.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/apps/sntp/sntp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/api_lib.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/api_msg.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/err.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/if_api.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/netbuf.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/netdb.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/netifapi.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/sockets.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/api/tcpip.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/apps/sntp/sntp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/apps/netbiosns/netbiosns.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/def.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/dns.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/inet_chksum.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/init.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ip.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/mem.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/memp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/netif.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/pbuf.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/raw.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/stats.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/sys.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/tcp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/tcp_in.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/tcp_out.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/timeouts.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/udp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/autoip.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/dhcp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/etharp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/icmp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/igmp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/ip4.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/ip4_napt.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/ip4_addr.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv4/ip4_frag.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/dhcp6.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/ethip6.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/icmp6.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/inet6.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/ip6.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/ip6_addr.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/ip6_frag.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/mld6.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/core/ipv6/nd6.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ethernet.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/bridgeif.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/bridgeif_fdb.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/slipif.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/auth.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/ccp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/chap-md5.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/chap-new.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/chap_ms.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/demand.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/eap.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/ecp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/eui64.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/fsm.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/ipcp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/ipv6cp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/lcp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/magic.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/mppe.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/multilink.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/ppp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/pppapi.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/pppcrypt.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/pppoe.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/pppol2tp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/pppos.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/upap.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/utils.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/vj.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/port/hooks/tcp_isn_default.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/port/hooks/lwip_default_hooks.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/port/debug/lwip_debug.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/port/sockets_ext.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/port/freertos/sys_arch.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/port/if_index.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/port/acd_dhcp_check.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/port/esp32xx/vfs_lwip.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/apps/ping/esp_ping.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/apps/ping/ping.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/apps/ping/ping_sock.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/arc4.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/des.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/md4.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/md5.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/sha1.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/lwip/apps/dhcpserver/dhcpserver.c" ],
             "include_dirs": [ "include", "include/apps", "include/apps/sntp", "lwip/src/include", "port/include", "port/freertos/include/", "port/esp32xx/include", "port/esp32xx/include/arch", "port/esp32xx/include/sys" ]
         },
@@ -887,15 +887,15 @@
             "alias": "idf::main",
             "target": "___idf_main",
             "prefix": "idf",
-            "dir": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/main",
+            "dir": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/main",
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [ "led", "buzzer", "push_button", "pir_sensor", "wifi", "esp_http_client" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/main/libmain.a",
-            "sources": [ "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/main/escape_room_main.c" ],
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/main/libmain.a",
+            "sources": [ "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/main/escape_room_main.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
@@ -909,8 +909,8 @@
             "priv_reqs": [ "soc", "esp_hw_support", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/mbedtls/libmbedtls.a",
-            "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c", "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/x509_crt_bundle.S" ],
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/mbedtls/libmbedtls.a",
+            "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c", "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/x509_crt_bundle.S" ],
             "include_dirs": [ "port/include", "mbedtls/include", "mbedtls/library", "esp_crt_bundle/include" ]
         },
         "newlib": {
@@ -924,7 +924,7 @@
             "priv_reqs": [ "soc", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/newlib/libnewlib.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/newlib/libnewlib.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/init.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/abort.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/assert.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/heap.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/locks.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/poll.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/pthread.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/random.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/getentropy.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/termios.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/stdatomic.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/time.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/sysconf.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/realpath.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/scandir.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/syscalls.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/reent_syscalls.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/port/esp_time_impl.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/flockfile.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/reent_init.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/newlib_init.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/newlib/src/port/esp_time_impl.c" ],
             "include_dirs": [ "platform_include" ]
         },
@@ -939,7 +939,7 @@
             "priv_reqs": [ "spi_flash", "newlib" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/nvs_flash/libnvs_flash.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/nvs_flash/libnvs_flash.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_api.cpp", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_cxx_api.cpp", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_item_hash_list.cpp", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_page.cpp", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_pagemanager.cpp", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_storage.cpp", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_handle_simple.cpp", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_handle_locked.cpp", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_partition.cpp", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_partition_lookup.cpp", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_partition_manager.cpp", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_types.cpp", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_platform.cpp", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_bootloader.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_encrypted_partition.cpp", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_bootloader_aes.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/nvs_flash/src/nvs_bootloader_xts_aes.c" ],
             "include_dirs": [ "include" ]
         },
@@ -962,15 +962,15 @@
             "alias": "idf::pir_sensor",
             "target": "___idf_pir_sensor",
             "prefix": "idf",
-            "dir": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/pir_sensor",
+            "dir": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/pir_sensor",
             "type": "LIBRARY",
             "lib": "__idf_pir_sensor",
             "reqs": [ "driver" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/pir_sensor/libpir_sensor.a",
-            "sources": [ "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/pir_sensor/pir_sensor.c" ],
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/pir_sensor/libpir_sensor.a",
+            "sources": [ "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/pir_sensor/pir_sensor.c" ],
             "include_dirs": [ "include" ]
         },
         "pthread": {
@@ -984,7 +984,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/pthread/libpthread.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/pthread/libpthread.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/pthread/pthread.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/pthread/pthread_cond_var.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/pthread/pthread_local_storage.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/pthread/pthread_rwlock.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/pthread/pthread_semaphore.c" ],
             "include_dirs": [ "include" ]
         },
@@ -992,15 +992,15 @@
             "alias": "idf::push_button",
             "target": "___idf_push_button",
             "prefix": "idf",
-            "dir": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/push_button",
+            "dir": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/push_button",
             "type": "LIBRARY",
             "lib": "__idf_push_button",
             "reqs": [ "driver" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/push_button/libpush_button.a",
-            "sources": [ "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/push_button/push_button.c" ],
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/push_button/libpush_button.a",
+            "sources": [ "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/push_button/push_button.c" ],
             "include_dirs": [ "include" ]
         },
         "sdmmc": {
@@ -1014,7 +1014,7 @@
             "priv_reqs": [ "soc", "esp_timer", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/sdmmc/libsdmmc.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/sdmmc/libsdmmc.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/sdmmc/sdmmc_cmd.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/sdmmc/sdmmc_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/sdmmc/sdmmc_init.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/sdmmc/sdmmc_io.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/sdmmc/sdmmc_mmc.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/sdmmc/sdmmc_sd.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/sdmmc/sd_pwr_ctrl/sd_pwr_ctrl.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1029,7 +1029,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/soc/libsoc.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/soc/libsoc.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/lldesc.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/dport_access_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/interrupts.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/gpio_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/uart_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/dport_access.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/adc_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/emac_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/spi_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/ledc_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/pcnt_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/rmt_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/sdm_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/i2s_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/i2c_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/timer_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/lcd_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/mcpwm_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/mpi_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/sdmmc_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/touch_sensor_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/twai_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/wdt_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/dac_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/rtc_io_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/sdio_slave_periph.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/soc/esp32/power_supply_periph.c" ],
             "include_dirs": [ "include", "esp32", "esp32/include", "esp32/register" ]
         },
@@ -1044,7 +1044,7 @@
             "priv_reqs": [ "bootloader_support", "app_update", "soc", "esp_mm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/spi_flash/libspi_flash.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/spi_flash/libspi_flash.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/flash_brownout_hook.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_drivers.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_generic.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_issi.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_mxic.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_gd.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_winbond.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_boya.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_mxic_opi.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_chip_th.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/memspi_host_driver.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/cache_utils.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/flash_mmap.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/flash_ops.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_wrap.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/esp_flash_api.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/esp_flash_spi_init.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_os_func_app.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/spi_flash/spi_flash_os_func_noos.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1059,7 +1059,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/tcp_transport/libtcp_transport.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/tcp_transport/libtcp_transport.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/tcp_transport/transport.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/tcp_transport/transport_ssl.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/tcp_transport/transport_internal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/tcp_transport/transport_socks_proxy.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/tcp_transport/transport_ws.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1074,7 +1074,7 @@
             "priv_reqs": [ "esp_timer", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_vfs_console" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/vfs/libvfs.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/vfs/libvfs.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/vfs/vfs.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/vfs/vfs_eventfd.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/vfs/vfs_semihost.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/vfs/nullfs.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1082,15 +1082,15 @@
             "alias": "idf::wifi",
             "target": "___idf_wifi",
             "prefix": "idf",
-            "dir": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/wifi",
+            "dir": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/wifi",
             "type": "LIBRARY",
             "lib": "__idf_wifi",
             "reqs": [ "esp_wifi", "esp_event", "esp_netif", "nvs_flash" ],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/wifi/libwifi.a",
-            "sources": [ "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/wifi/wifi.c" ],
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/wifi/libwifi.a",
+            "sources": [ "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/wifi/wifi.c" ],
             "include_dirs": [ "include" ]
         },
         "wpa_supplicant": {
@@ -1104,7 +1104,7 @@
             "priv_reqs": [ "mbedtls", "esp_timer", "esp_wifi" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/wpa_supplicant/libwpa_supplicant.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/wpa_supplicant/libwpa_supplicant.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/port/os_xtensa.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/port/eloop.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/ap/ap_config.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/ap/ieee802_1x.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/ap/wpa_auth.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/ap/wpa_auth_ie.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/ap/pmksa_cache_auth.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/ap/sta_info.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/ap/ieee802_11.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/ap/comeback_token.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/common/sae.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/common/dragonfly.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/common/wpa_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/utils/bitfield.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/aes-siv.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/sha256-kdf.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/ccmp.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/aes-gcm.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/crypto_ops.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/dh_group5.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/dh_groups.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/ms_funcs.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/sha1-tlsprf.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/sha256-tlsprf.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/sha384-tlsprf.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/sha256-prf.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/sha1-prf.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/sha384-prf.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/md4-internal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/sha1-tprf.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_common/eap_wsc_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/common/ieee802_11_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/chap.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_mschapv2.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_peap.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_peap_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_tls.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_tls_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_ttls.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/mschapv2.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast_pac.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/rsn_supp/pmksa_cache.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa_ie.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/utils/base64.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/utils/common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/utils/ext_password.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/utils/uuid.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/utils/wpabuf.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/utils/wpa_debug.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/utils/json.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/wps/wps.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/wps/wps_attr_build.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/wps/wps_attr_parse.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/wps/wps_attr_process.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/wps/wps_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/wps/wps_dev_attr.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/wps/wps_enrollee.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/common/sae_pk.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_eap_client.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa2_api_port.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa_main.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpas_glue.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_common.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wps.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa3.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_owe.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_hostap.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/tls_mbedtls.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-bignum.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-rsa.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-ec.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/rc4.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/des-internal.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/fastpbkdf2.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/aes-wrap.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/aes-unwrap.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/wpa_supplicant/src/crypto/aes-ccm.c" ],
             "include_dirs": [ "include", "port/include", "esp_supplicant/include" ]
         },
@@ -1119,7 +1119,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/xtensa/libxtensa.a",
+            "file": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/xtensa/libxtensa.a",
             "sources": [ "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/xtensa/eri.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/xtensa/xt_trax.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/xtensa/xtensa_context.S", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/xtensa/xtensa_intr_asm.S", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/xtensa/xtensa_intr.c", "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/xtensa/xtensa_vectors.S" ],
             "include_dirs": [ "esp32/include", "include", "deprecated_include" ]
         }
@@ -1207,7 +1207,7 @@
             "priv_reqs": [ "esp_driver_uart", "esp_driver_usb_serial_jtag" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build" ]
+            "include_dirs": [ "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build" ]
         },
         "cxx": {
             "alias": "idf::cxx",
@@ -2425,7 +2425,7 @@
             "alias": "idf::main",
             "target": "___idf_main",
             "prefix": "idf",
-            "dir": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/main",
+            "dir": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/main",
             "lib": "__idf_main",
             "reqs": [ "led", "buzzer", "push_button", "pir_sensor", "wifi", "esp_http_client" ],
             "priv_reqs": [],
@@ -2437,7 +2437,7 @@
             "alias": "idf::buzzer",
             "target": "___idf_buzzer",
             "prefix": "idf",
-            "dir": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/buzzer",
+            "dir": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/buzzer",
             "lib": "__idf_buzzer",
             "reqs": [ "driver", "freertos" ],
             "priv_reqs": [],
@@ -2449,7 +2449,7 @@
             "alias": "idf::led",
             "target": "___idf_led",
             "prefix": "idf",
-            "dir": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/led",
+            "dir": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/led",
             "lib": "__idf_led",
             "reqs": [ "driver" ],
             "priv_reqs": [],
@@ -2461,7 +2461,7 @@
             "alias": "idf::pir_sensor",
             "target": "___idf_pir_sensor",
             "prefix": "idf",
-            "dir": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/pir_sensor",
+            "dir": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/pir_sensor",
             "lib": "__idf_pir_sensor",
             "reqs": [ "driver" ],
             "priv_reqs": [],
@@ -2473,7 +2473,7 @@
             "alias": "idf::push_button",
             "target": "___idf_push_button",
             "prefix": "idf",
-            "dir": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/push_button",
+            "dir": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/push_button",
             "lib": "__idf_push_button",
             "reqs": [ "driver" ],
             "priv_reqs": [],
@@ -2485,7 +2485,7 @@
             "alias": "idf::wifi",
             "target": "___idf_wifi",
             "prefix": "idf",
-            "dir": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/components/wifi",
+            "dir": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/components/wifi",
             "lib": "__idf_wifi",
             "reqs": [ "esp_wifi", "esp_event", "esp_netif", "nvs_flash" ],
             "priv_reqs": [],
@@ -2496,10 +2496,10 @@
     },
     "debug_prefix_map_gdbinit": "",
     "gdbinit_files": {
-        "01_symbols": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/gdbinit/symbols",
-        "02_prefix_map": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/gdbinit/prefix_map",
-        "03_py_extensions": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/gdbinit/py_extensions",
-        "04_connect": "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/gdbinit/connect"
+        "01_symbols": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/gdbinit/symbols",
+        "02_prefix_map": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/gdbinit/prefix_map",
+        "03_py_extensions": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/gdbinit/py_extensions",
+        "04_connect": "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/gdbinit/connect"
     },
     "debug_arguments_openocd": "-f board/esp32-wrover-kit-3.3v.cfg"
 }

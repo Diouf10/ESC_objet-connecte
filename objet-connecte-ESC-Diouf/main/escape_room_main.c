@@ -9,7 +9,7 @@
 #include "freertos/queue.h"
 #include "esp_log.h"
 #include "esp_http_client.h"
-#include "wifi.h"       
+#include "wifi.h"
 
 #define SEQ_LEN 4
 #define LED_VERTE GPIO_NUM_2
@@ -22,41 +22,51 @@ int codeSecret[SEQ_LEN] = {1, 3, 2, 4};
 int tentative[SEQ_LEN];
 int index_seq = 0;
 
-
 void iot_task(void *pvParameters)
 {
     char json[64];
 
     while (1) {
         if (xQueueReceive(event_queue, &json, portMAX_DELAY)) {
-            
+
+            // On attend le WiFi AVANT d'envoyer
+            xEventGroupWaitBits(
+                wifi_event_group,
+                WIFI_CONNECTED_BIT,
+                pdFALSE,
+                pdTRUE,
+                portMAX_DELAY
+            );
+
             ESP_LOGI("IoT", "Envoi JSON: %s", json);
 
             esp_http_client_config_t config = {
                 .url = "http://10.0.0.87:3005/api/game/event",
                 .method = HTTP_METHOD_POST,
                 .transport_type = HTTP_TRANSPORT_OVER_TCP,
-};
-
+            };
 
             esp_http_client_handle_t client = esp_http_client_init(&config);
             esp_http_client_set_header(client, "Content-Type", "application/json");
             esp_http_client_set_post_field(client, json, strlen(json));
 
-            esp_http_client_perform(client);
+            esp_err_t err = esp_http_client_perform(client);
+            if (err != ESP_OK) {
+                ESP_LOGE("IoT", "HTTP POST failed: %s", esp_err_to_name(err));
+            }
+
             esp_http_client_cleanup(client);
         }
     }
 }
 
-
 void app_main(void) {
     ESP_LOGI(TAG, "Initialisation du système...");
 
     wifi_init_sta();
+
     event_queue = xQueueCreate(10, sizeof(char) * 64);
     xTaskCreate(iot_task, "iot_task", 4096, NULL, 5, NULL);
-
 
     gpio_num_t btns[4] = {12, 13, 14, 15};
     buttons_init(btns, 4);
@@ -76,13 +86,11 @@ void app_main(void) {
 
     int lastPirState = 0;
     bool pir_disabled = false;
-    bool active_play = false; // le jeu démarre après détection PIR
+    bool active_play = false;
     TickType_t pir_disabled_start = 0;
 
-    // ---- Boule de jeu ---- 
     while (1) {
-        // Vérifie si le cooldown PIR est terminé
-        if (pir_disabled && (xTaskGetTickCount() - pir_disabled_start) >= pdMS_TO_TICKS(300000)) { // Représente 5 minutes
+        if (pir_disabled && (xTaskGetTickCount() - pir_disabled_start) >= pdMS_TO_TICKS(300000)) {
             pir_disabled = false;
             ESP_LOGI(TAG, "Le capteur PIR est réactivé.");
         }
@@ -100,16 +108,14 @@ void app_main(void) {
                 snprintf(json, sizeof(json), "{\"event\":\"pir\",\"value\":1}");
                 xQueueSend(event_queue, json, 0);
 
-
                 gpio_set_level(LED_VERTE, 1);
                 buzzer_beep_short();
                 vTaskDelay(pdMS_TO_TICKS(300));
                 gpio_set_level(LED_VERTE, 0);
                 ESP_LOGI(TAG, "Système activé. En attente d'une entrée de code...");
 
-                active_play = true; // jeux est actif
-
-                pir_disabled = true; // on Disable la detection
+                active_play = true;
+                pir_disabled = true;
                 pir_disabled_start = xTaskGetTickCount();
                 ESP_LOGI(TAG, "PIR désactivé pour 5 minutes.");
             }
@@ -118,7 +124,6 @@ void app_main(void) {
             lastPirState = pirNow;
         }
 
-        // --- Partie logique du jeu : activée SEULEMENT après le PIR ---
         if (active_play) {
             int b = read_button();
             if (b != -1) {
@@ -127,7 +132,6 @@ void app_main(void) {
                 char json[64];
                 snprintf(json, sizeof(json), "{\"event\":\"button\",\"value\":%d}", b);
                 xQueueSend(event_queue, json, 0);
-
 
                 tentative[index_seq] = b;
                 index_seq++;
@@ -138,7 +142,7 @@ void app_main(void) {
                     ESP_LOGI(TAG, "Séquence complète entrée, vérification...");
                     int correct = 1;
                     for (int i = 0; i < SEQ_LEN; i++) {
-                        ESP_LOGI(TAG, "Tentative[%d] = %d, CodeSecret[%d] = %d", 
+                        ESP_LOGI(TAG, "Tentative[%d] = %d, CodeSecret[%d] = %d",
                                  i, tentative[i], i, codeSecret[i]);
                         if (tentative[i] != codeSecret[i]) {
                             correct = 0;
@@ -165,7 +169,6 @@ void app_main(void) {
                         char json[64];
                         snprintf(json, sizeof(json), "{\"event\":\"failure\",\"value\":1}");
                         xQueueSend(event_queue, json, 0);
-
 
                         gpio_set_level(LED_ROUGE, 1);
                         buzzer_beep_long();

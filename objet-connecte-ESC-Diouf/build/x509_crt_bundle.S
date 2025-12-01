@@ -1,4 +1,4 @@
-/* * Data converted from /Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

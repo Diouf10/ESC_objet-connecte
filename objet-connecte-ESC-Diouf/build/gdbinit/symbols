@@ -18,8 +18,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file /Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader/bootloader.elf
+    add-symbol-file /Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file /Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/objet-connecte-ESC-Diouf.elf
+file /Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/objet-connecte-ESC-Diouf.elf

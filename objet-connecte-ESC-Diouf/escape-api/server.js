@@ -1,7 +1,10 @@
 const express = require("express");
 const fs = require("fs");
 const app = express();
-const PORT = 3005;
+
+require("dotenv").config();
+
+const PORT = process.env.PORT || 3005;
 
 app.use(express.json());
 app.use(require("cors")());
@@ -88,6 +91,13 @@ app.get("/api/game/stats/buttons", (req, res) => {
 
     res.json(btn);
 });
+
+// Générer automatiquement config.js pour le frontend
+const configJsContent = `window.API_BASE = "${process.env.API_URL || "http://localhost:3005"}";`;
+
+fs.writeFileSync("./public/config.js", configJsContent);
+console.log("config.js généré avec :", process.env.API_URL);
+
 
 app.listen(PORT, () => {
     console.log("API run sur http://localhost:" + PORT);

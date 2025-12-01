@@ -22,4 +22,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file /Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader/bootloader.elf
+file /Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/bootloader/bootloader.elf

@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Statistiques – IoT</title>
     <link rel="stylesheet" href="css/lab.css">
+    <script src="config.js"></script>
 </head>
 
 <nav class="lab-menu">
@@ -36,7 +37,7 @@
 
 <script>
     async function loadStats() {
-        const base = "http://localhost:3005";
+        const base = window.API_BASE;
 
         const s = await (await fetch(base + "/api/game/stats")).json();
         const b = await (await fetch(base + "/api/game/stats/buttons")).json();

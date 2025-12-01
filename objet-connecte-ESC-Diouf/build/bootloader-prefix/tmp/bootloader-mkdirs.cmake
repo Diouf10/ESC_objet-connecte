@@ -10,18 +10,18 @@ if(NOT EXISTS "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloa
   file(MAKE_DIRECTORY "/Users/mouhammadwaganediouf/esp/v5.5.1/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader"
-  "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader-prefix"
-  "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader-prefix/tmp"
-  "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader-prefix/src/bootloader-stamp"
-  "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader-prefix/src"
-  "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/bootloader"
+  "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/bootloader-prefix"
+  "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/bootloader-prefix/tmp"
+  "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/bootloader-prefix/src"
+  "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

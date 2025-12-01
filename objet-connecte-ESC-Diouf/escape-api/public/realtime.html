@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Événements en Temps Réel – IoT</title>
     <link rel="stylesheet" href="css/lab.css">
+    <script src="config.js"></script>
 </head>
 
 <body>
@@ -33,7 +34,8 @@
 
 <script>
     
-const API = "http://localhost:3005";
+    // ip dynamique ...
+    const API = window.API_BASE;
 
 // Format FR
 function formatDateFR(date) {

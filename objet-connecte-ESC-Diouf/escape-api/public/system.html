@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Journal Système – IoT</title>
     <link rel="stylesheet" href="css/lab.css">
+    <script src="config.js"></script>
 </head>
 
 <body>
@@ -38,6 +39,8 @@
 
 <script>
 
+const API = window.API_BASE;
+
 // Format FR, sans secondes
 function formatDateFR(dateStr) {
     if (!dateStr) return "—";
@@ -54,7 +57,7 @@ function formatDateFR(dateStr) {
 
 async function loadSystem() {
     try {
-        const events = await (await fetch("/api/game/events")).json();
+        const events = await (await fetch(API + "/api/game/events")).json();
 
         // Statut API
         document.getElementById("apiStatus").innerHTML =

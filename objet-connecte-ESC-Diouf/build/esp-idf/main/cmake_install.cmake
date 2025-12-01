@@ -1,4 +1,4 @@
-# Install script for directory: /Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/main
+# Install script for directory: /Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

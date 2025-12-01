@@ -1,13 +1,13 @@
-Projet de Session — Coffre du Laboratoire C-200
+## Projet de Session — Coffre du Laboratoire C-200
 
-1. Contexte du projet
+### 1. Contexte du projet
 
 Ce prototype a été conçu dans le cadre du cours Objets connectés.
 L’objectif est de créer une énigme interactive (prototype) pouvant s’intégrer à une salle d’escape game.
 Le système, basé sur un microcontrôleur ESP32, combine plusieurs capteurs et actionneurs afin d’offrir une expérience immersive : détection de présence, saisie d’un code secret, rétroaction lumineuse et sonore.
 
 
-2. Concept narratif
+### 2. Concept narratif
    
 Les joueurs explorent le laboratoire abandonné du Dr Verdan, un chercheur obsédé par les ondes lumineuses et la conversion de la couleur en énergie.Avant sa disparition, il aurait créé une expérience chromatique capable de concentrer la lumière pure.
 
@@ -21,7 +21,7 @@ S’ils réussissent, le dispositif s’illumine, une mélodie résonne, et le c
 
 
 
-3. Éléments matériels
+### 3. Éléments matériels
    
 Élément	Type	Rôle
 
@@ -34,7 +34,7 @@ Buzzer (GPIO 5)	Actionneur sonore	Produit les bips et la mélodie
 Résistances, fils, breadboard	—	Connexions et protection des composants
 
 
-4. Fonctionnement
+### 4. Fonctionnement
 
 - Détection de présence : le capteur PIR détecte la chaleur du joueur et envoie un signal à l’ESP32.
 Le système s’active ; la LED verte clignote brièvement et un bip indique que le dispositif est prêt.
@@ -69,44 +69,77 @@ Un schéma complet accompagne le rapport pour illustrer les connexions.
 
 
 
-6. Code et structure
+### 6. Code et structure
 
 Le projet est divisé en modules :
 
-- main.c : logique principale (boucle de jeu, validation de la séquence).
+/main
+  └── escape_room_main.c 
+  └── CMakeLists.txt
 
-- buzzer.c / buzzer.h : gestion du son (bip et mélodie).
+/components
+  ├── buzzer/ 
+  ├── led/ 
+  ├── pir_sensor/
+  ├── push_button/
+  └── wifi/
 
-- pir_sensor.c / pir_sensor.h : détection de présence.
-
-- push_button.c / push_button.h : lecture des boutons.
-
-- led.c / led.h : contrôle des voyants lumineux.
-
-
-
-
-7. Améliorations prévues (Remise 2)
-
-Pour la seconde phase du projet, un module de communication IoT sera ajouté.
-L’ESP32 enverra un message HTTP vers un tableau de bord (ThingSpeak ou IFTTT) pour consigner les réussites.
-
-Des mesures simples de sécurité seront intégrées, telles qu’une clé API et la validation du message.
+/escape-api
+  ├── server.js                 (API REST en Node.js)
+  ├── events.json               (stockage d’événements)
+  ├── .env                      (configuration locale)
+  └── public/                   (page web temps réel)
 
 
-8. Vidéo démonstrative
-    
-Une courte vidéo (6 minutes) montre le fonctionnement du prototype :
-
-Détection de présence
-
-Entrée d’une mauvaise séquence (LED rouge)
-
-Entrée de la bonne séquence (LED verte + mélodie)
-
-Réinitialisation automatique
 
 
-9.   Auteur
+### 7. Communication IoT
+
+Le projet utilise dorénavant une API REST Web créée en Node.js.
+L’ESP32 envoie un JSON de la forme :
+
+```bash
+{ "event": "pir", "value": 1 }
+```
+ou
+```bash
+{ "event": "button", "value": 3 }
+```
+
+L’API :
+   - Reçoit les données via POST /api/events
+   - Stocke les événements dans un fichier JSON
+   - Met à jour une page web en temps réel via Socket.IO
+
+L'objectif est d'obtenir :
+  - Une page web affichant les événements en direct
+  - Un historique des actions dans le fichier events.json
+
+
+
+### 8. Processus de compilation Build, flash & test du prototype
+
+- Compilation :
+    ```bash
+    cd objet-connecte-ESC-Diouf
+    idf.py build
+    ```
+
+- Flashage :
+    ```bash
+    idf.py -p /dev/cu.usbserial-1110 flash monitor
+    ```
+
+- Déploiement de l’API :
+    ```bash
+    cd escape-api
+    npm install
+    npm start
+    ```
+
+
+
+
+### 9. Auteur
 
 Projet réalisé par Mouhammad Wagane Diouf

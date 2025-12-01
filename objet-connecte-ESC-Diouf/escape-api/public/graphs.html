@@ -5,6 +5,7 @@
     <title>Graphiques – IoT</title>
     <link rel="stylesheet" href="css/lab.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="config.js"></script>
 </head>
 
 <nav class="lab-menu">
@@ -25,10 +26,12 @@
 </div>
 
 <script>
+const API = window.API_BASE;
+
 async function loadGraphs() {
     try {
         
-        const b = await (await fetch("http://localhost:3005/api/game/stats/buttons")).json();
+        const b = await (await fetch(API + "/api/game/stats/buttons")).json();
 
         new Chart(document.getElementById("btnChart"), {
             type: "bar",

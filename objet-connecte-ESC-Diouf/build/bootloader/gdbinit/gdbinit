@@ -1,2 +1,2 @@
-source /Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader/gdbinit/symbols
-source /Users/mouhammadwaganediouf/objet-connecte-ESC-Diouf/build/bootloader/gdbinit/connect
+source /Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/bootloader/gdbinit/symbols
+source /Users/mouhammadwaganediouf/Desktop/ESC_objet-connecte/objet-connecte-ESC-Diouf/build/bootloader/gdbinit/connect
