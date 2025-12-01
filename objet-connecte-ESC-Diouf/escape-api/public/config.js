@@ -1,1 +1,1 @@
-window.API_BASE = "http://10.0.0.87:3005";
+window.API_BASE = "http://10.105.0.22:3005";

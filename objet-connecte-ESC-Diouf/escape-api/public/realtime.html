@@ -37,70 +37,70 @@
     // ip dynamique ...
     const API = window.API_BASE;
 
-// Format FR
-function formatDateFR(date) {
-    return new Date(date).toLocaleString("fr-FR", {
-        weekday: "long",
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit"
-    });
-}
+    // Format FR
+    function formatDateFR(date) {
+        return new Date(date).toLocaleString("fr-FR", {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit"
+        });
+    }
 
-// Badge coloré
-function getEventBadge(event) {
-    return `<span class="event-pill ${event}">${event}</span>`;
-}
+    // Badge coloré
+    function getEventBadge(event) {
+        return `<span class="event-pill ${event}">${event}</span>`;
+    }
 
-// Valeur colorée
-function getValueLabel(ev) {
-    if (ev.event === "pir") {
-        return `<span class="color-pir">Détecté</span>`;
+    // Valeur colorée
+    function getValueLabel(ev) {
+        if (ev.event === "pir") {
+            return `<span class="color-pir">Détecté</span>`;
+        }
+        if (ev.event === "success") {
+            return `<span class="color-success">Succès</span>`;
+        }
+        if (ev.event === "failure") {
+            return `<span class="color-failure">Échec</span>`;
+        }
+        if (ev.event === "button") {
+            switch (ev.value) {
+                case 1: return `<span class="color-rouge">Rouge</span>`;
+                case 2: return `<span class="color-bleu">Bleu</span>`;
+                case 3: return `<span class="color-vert">Vert</span>`;
+                case 4: return `<span class="color-jaune">Jaune</span>`;
+            }
+        }
+        return ev.value;
     }
-    if (ev.event === "success") {
-        return `<span class="color-success">Succès</span>`;
-    }
-    if (ev.event === "failure") {
-        return `<span class="color-failure">Échec</span>`;
-    }
-    if (ev.event === "button") {
-        switch (ev.value) {
-            case 1: return `<span class="color-rouge">Rouge</span>`;
-            case 2: return `<span class="color-bleu">Bleu</span>`;
-            case 3: return `<span class="color-vert">Vert</span>`;
-            case 4: return `<span class="color-jaune">Jaune</span>`;
+
+    // Chargement réel
+    async function loadRealtime() {
+        try {
+            const events = await (await fetch(API + "/api/game/events")).json();
+            const tbody = document.getElementById("eventTable");
+            tbody.innerHTML = "";
+
+            events.slice().reverse().forEach(ev => {
+                tbody.innerHTML += `
+                    <tr>
+                        <td>${getEventBadge(ev.event)}</td>
+                        <td>${getValueLabel(ev)}</td>
+                        <td>${formatDateFR(ev.receivedAt)}</td>
+                    </tr>
+                `;
+            });
+        } catch (err) {
+            console.error("Erreur chargement événements :", err);
         }
     }
-    return ev.value;
-}
 
-// Chargement réel
-async function loadRealtime() {
-    try {
-        const events = await (await fetch(API + "/api/game/events")).json();
-        const tbody = document.getElementById("eventTable");
-        tbody.innerHTML = "";
-
-        events.slice().reverse().forEach(ev => {
-            tbody.innerHTML += `
-                <tr>
-                    <td>${getEventBadge(ev.event)}</td>
-                    <td>${getValueLabel(ev)}</td>
-                    <td>${formatDateFR(ev.receivedAt)}</td>
-                </tr>
-            `;
-        });
-    } catch (err) {
-        console.error("Erreur chargement événements :", err);
-    }
-}
-
-// Mise à jour auto toutes les 2s
-setInterval(loadRealtime, 2000);
-loadRealtime();
+    // Mise à jour auto toutes les 2s
+    setInterval(loadRealtime, 2000);
+    loadRealtime();
 </script>
 
 </body>

@@ -39,88 +39,88 @@
 
 <script>
 
-const API = window.API_BASE;
+    const API = window.API_BASE;
 
-// Format FR, sans secondes
-function formatDateFR(dateStr) {
-    if (!dateStr) return "—";
+    // Format FR, sans secondes
+    function formatDateFR(dateStr) {
+        if (!dateStr) return "—";
 
-    return new Date(dateStr).toLocaleString("fr-FR", {
-        weekday: "long",
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-        hour: "2-digit",
-        minute: "2-digit"
-    });
-}
-
-async function loadSystem() {
-    try {
-        const events = await (await fetch(API + "/api/game/events")).json();
-
-        // Statut API
-        document.getElementById("apiStatus").innerHTML =
-            `<span style="color: #28a745; font-weight: bold;">API opérationnelle</span>`;
-
-        // Total
-        document.getElementById("total").innerText =
-            "Nombre total d'événements : " + events.length;
-
-        if (events.length === 0) return;
-
-        // Dernier événement
-        const last = events[events.length - 1];
-        document.getElementById("lastEvent").innerText =
-            "Dernier événement : " + last.event + " (" + formatDateFR(last.receivedAt) + ")";
-
-        // Dernier succès
-        const lastSuccess = [...events].reverse().find(e => e.event === "success");
-        document.getElementById("lastSuccess").innerText =
-            "Dernier succès : " + (lastSuccess ? formatDateFR(lastSuccess.receivedAt) : "Aucun");
-
-        // Dernier échec
-        const lastFailure = [...events].reverse().find(e => e.event === "failure");
-        document.getElementById("lastFailure").innerText =
-            "Dernier échec : " + (lastFailure ? formatDateFR(lastFailure.receivedAt) : "Aucun");
-
-        // Dernier bouton
-        const lastBtn = [...events].reverse().find(e => e.event === "button");
-        document.getElementById("lastButton").innerHTML =
-            "Dernier bouton pressé : " +
-            (lastBtn ? lastBtn.value + " (" + formatDateFR(lastBtn.receivedAt) + ")" : "Aucun");
-
-        // Dernier PIR
-        const lastPir = [...events].reverse().find(e => e.event === "pir");
-        document.getElementById("lastPir").innerText =
-            "Dernière détection PIR : " +
-            (lastPir ? formatDateFR(lastPir.receivedAt) : "Aucune");
-
-        // Temps depuis dernier succès
-        if (lastSuccess) {
-            const t = new Date(lastSuccess.receivedAt);
-            const now = new Date();
-            const diff = Math.floor((now - t) / 1000);
-
-            const min = Math.floor(diff / 60);
-            const sec = diff % 60;
-
-            document.getElementById("timeSinceSuccess").innerText =
-                `${min} minutes et ${sec} secondes`;
-        } else {
-            document.getElementById("timeSinceSuccess").innerText =
-                "Aucun succès enregistré";
-        }
-
-    } catch (err) {
-        document.getElementById("apiStatus").innerHTML =
-            `<span style="color: red; font-weight: bold;">API injoignable</span>`;
-        console.error(err);
+        return new Date(dateStr).toLocaleString("fr-FR", {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit"
+        });
     }
-}
 
-setInterval(loadSystem, 2000);
-loadSystem();
+    async function loadSystem() {
+        try {
+            const events = await (await fetch(API + "/api/game/events")).json();
+
+            // Statut API
+            document.getElementById("apiStatus").innerHTML =
+                `<span style="color: #28a745; font-weight: bold;">API opérationnelle</span>`;
+
+            // Total
+            document.getElementById("total").innerText =
+                "Nombre total d'événements : " + events.length;
+
+            if (events.length === 0) return;
+
+            // Dernier événement
+            const last = events[events.length - 1];
+            document.getElementById("lastEvent").innerText =
+                "Dernier événement : " + last.event + " (" + formatDateFR(last.receivedAt) + ")";
+
+            // Dernier succès
+            const lastSuccess = [...events].reverse().find(e => e.event === "success");
+            document.getElementById("lastSuccess").innerText =
+                "Dernier succès : " + (lastSuccess ? formatDateFR(lastSuccess.receivedAt) : "Aucun");
+
+            // Dernier échec
+            const lastFailure = [...events].reverse().find(e => e.event === "failure");
+            document.getElementById("lastFailure").innerText =
+                "Dernier échec : " + (lastFailure ? formatDateFR(lastFailure.receivedAt) : "Aucun");
+
+            // Dernier bouton
+            const lastBtn = [...events].reverse().find(e => e.event === "button");
+            document.getElementById("lastButton").innerHTML =
+                "Dernier bouton pressé : " +
+                (lastBtn ? lastBtn.value + " (" + formatDateFR(lastBtn.receivedAt) + ")" : "Aucun");
+
+            // Dernier PIR
+            const lastPir = [...events].reverse().find(e => e.event === "pir");
+            document.getElementById("lastPir").innerText =
+                "Dernière détection PIR : " +
+                (lastPir ? formatDateFR(lastPir.receivedAt) : "Aucune");
+
+            // Temps depuis dernier succès
+            if (lastSuccess) {
+                const t = new Date(lastSuccess.receivedAt);
+                const now = new Date();
+                const diff = Math.floor((now - t) / 1000);
+
+                const min = Math.floor(diff / 60);
+                const sec = diff % 60;
+
+                document.getElementById("timeSinceSuccess").innerText =
+                    `${min} minutes et ${sec} secondes`;
+            } else {
+                document.getElementById("timeSinceSuccess").innerText =
+                    "Aucun succès enregistré";
+            }
+
+        } catch (err) {
+            document.getElementById("apiStatus").innerHTML =
+                `<span style="color: red; font-weight: bold;">API injoignable</span>`;
+            console.error(err);
+        }
+    }
+
+    setInterval(loadSystem, 2000);
+    loadSystem();
 </script>
 
 </body>

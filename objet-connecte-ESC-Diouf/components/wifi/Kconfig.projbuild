@@ -1,0 +1,11 @@
+menu "Project WiFi Settings"
+
+config PROJECT_WIFI_SSID
+    string "WiFi SSID"
+    default "MyWifi"
+
+config PROJECT_WIFI_PASS
+    string "WiFi Password"
+    default "password"
+
+endmenu
